@@ -1,0 +1,652 @@
+*{margin:0;padding:0} /*初期設定として余白無し*/
+
+img {
+    max-width: 100%; /*画像の幅を枠を超えないようにする*/
+    height: auto; /* アスペクト比を維持するために height: auto; を追加 */
+}
+
+/*上のホームバー*/
+body {
+    margin: 0; /*余白無し*/
+    background-color: rgb(231, 235, 227); /*背景カラー*/
+    }
+
+div.nav {
+    max-width: 100%; /*横幅の上限*/
+    margin: 0 auto; /*余白*/
+    }
+    .menu {
+    font-size: 30px; /*文字のサイズ*/
+    margin: 0; /*余白*/
+    padding: 0; /*余白*/
+    list-style: none; /*・の有無*/
+    text-align: center; /*文字を中心に揃える*/
+    display: flex; /*要素を横並びにする*/
+    }
+    .menu li {
+    background-color: rgb(231, 235, 227); /*背景カラー*/
+    box-sizing: border-box; /*パディングとボーダーを含む*/
+    padding: 4px; /*余白*/
+    width: 25%; /*横幅*/
+    border-top : 1px solid white; /*ボーダーの上*/
+    border-right : 2.5px solid white; /*ボーダーの右*/
+    border-left: 2.5px solid white; /*ボーダーの左*/
+    border-bottom : 5px solid white; /*ボーダーの下*/
+    }
+    .menu li:first-child {
+    border-left:1px solid black; /*左側に1ピクセルの黒い実線の境界線を設定*/
+    }
+    .menu li:hover {
+    background-color: coral; /*ホバー（マウスが乗った状態）した際に、背景色を珊瑚色に変更*/
+    }
+    a {
+    text-decoration: none; /*すべてのアンカータグ（a）に対して、テキストの下線を非表示*/
+    }
+    a:link, a:visited, a:hover, a:active {
+    color: black; /*状態に関わらず、リンクのテキスト色を黒に設定*/
+    }
+
+/*タイトル背景デザイン*/
+div.top{
+    width: 100%; /*横幅*/
+    height: 235px; /*高さ*/
+    text-align: center; /*中央揃え*/
+    font-size: 25px; /*文字のサイズ*/
+    background-color: rgb(231, 235, 227); /*背景カラー*/
+}
+
+/*タイトルデザイン*/
+h1.top{
+    color: black; /*文字のカラー*/
+    border: 2px solid rgb(231, 235, 227);
+    padding: 3px; 
+    background-color:rgb(231, 235, 227);
+    border-radius: 5px;
+}
+
+/*全体デザイン（1,2枚目）*/
+div.al{
+    display: flow-root; /*要素を縦に並べる*/
+    width: 100%; /*横幅*/
+}
+
+/*「あなたは今どんな気分」*/
+div.c{
+    width: 100%; 
+    height: 45px;
+    background-color:rgb(60, 190, 240);
+}
+
+/*1枚目の下デザイン*/
+div.sh{
+    display: flex;
+    text-align: center; /*中央揃え*/
+    width: 100%;/*幅*/
+    height: 270px;/*高さ*/
+    background: rgb(231, 235, 227);/*背景色*/
+}
+
+/*「飲みたい！」デザイン*/
+div.nomitai{
+    width: 100%;
+    text-align: center;
+    color:black;
+    font-size: 30px;
+}
+div.nomitai img {
+    width: 300px;
+    height: 200px;
+}
+a.nomi{
+    color: black;
+    border: 2px solid white;
+    padding: 5px;
+    background-color:white;
+    border-radius: 5px; /*角を丸める*/
+}
+
+/*「食べたい！」デザイン*/
+div.tabetai{
+    width: 100%;
+    text-align: center;
+    color:black;
+    font-size: 30px;
+}
+div.tabetai img {
+    width: 300px;
+    height: 200px;
+}
+a.taberu{
+    color: black;
+    border: 2px solid white;
+    padding: 5px;
+    background-color:white;
+    border-radius: 5px; /*角を丸める*/
+}
+
+/*「遊びたい！」デザイン*/
+div.asobitai{
+    width: 100%;
+    text-align: center;
+    color:black;
+    font-size: 30px;
+}
+div.asobitai img {
+    width: 300px;
+    height: 200px;
+}
+a.asobi{
+    color: black;
+    border: 2px solid white;
+    padding: 5px;
+    background-color:white;
+    border-radius: 5px; /*角を丸める*/
+}
+/*ここまで1枚目*/
+
+/*2枚目（居酒屋）デザイン*/
+
+div.sh2{
+    display: flex;
+    text-align: center;
+    width: 100%;/*幅*/
+    height: 270px;/*高さ*/
+    background: rgb(70, 80, 100);/*背景色*/
+    font-size: 30px;
+}
+/*スマホ対応*/
+@media only screen and (max-width: 1000px) {
+    div.sh2{
+        display: flex;
+        text-align: center;
+        width: 100%;/*幅*/
+        height: 270px;/*高さ*/
+        background: rgb(70, 80, 100);/*背景色*/
+        font-size: 23px;
+    }
+}
+/*村さ来*/
+div.murasaki{
+    width: 100%;
+    text-align: center;
+    color:black;
+}
+div.murasaki img {
+    width: 300px;
+    height: 200px;
+}
+
+a.murasaki{
+    color: black;
+    border: 2px solid rgb(231, 235, 227);
+    padding: 5px;
+    background-color:rgb(231, 235, 227);
+    border-radius: 5px;
+}
+
+/*居酒屋行くなら俺んち来る？*/
+div.orenchi{
+    width: 100%;
+    text-align: center;
+    color:black;
+}
+div.orenchi img {
+    width: 300px;
+    height: 200px;
+}
+a.orenchi{
+    color: black;
+    border: 2px solid rgb(231, 235, 227);
+    padding: 5px;
+    background-color:rgb(231, 235, 227);
+    border-radius: 5px;
+}
+
+/*シーシャもくもく*/
+div.si-sha{
+    width: 100%;
+    text-align: center;
+    color:black;
+}
+div.si-sha img {
+    width: 300px;
+    height: 200px;
+}
+a.si-sha{
+    color: black;
+    border: 2px solid rgb(231, 235, 227);
+    padding: 5px;
+    background-color:rgb(231, 235, 227);
+    border-radius: 5px;
+}
+/*ここまで2枚目（居酒屋）*/
+
+/*2枚目（ラーメン屋）デザイン*/
+div.sh3{
+    display: flex;
+    text-align: center;
+    width: 100%;/*幅*/
+    height: 270px;/*高さ*/
+    background: rgb(229, 227, 88);/*背景色*/
+    font-size: 30px;
+}
+@media only screen and (max-width: 1000px) {
+    div.sh3{
+        display: flex;
+        text-align: center;
+        width: 100%;/*幅*/
+        height: 270px;/*高さ*/
+        background: rgb(229, 227, 88);/*背景色*/
+        font-size: 23px;
+    }
+}
+/*必勝軒*/
+div.hissyoken{
+    width: 100%;
+    text-align: center;
+    color:black;
+}
+div.hissyoken img {
+    width: 300px;
+    height: 200px;
+}
+
+a.hissyoken{
+    color: black;
+    border: 2px solid rgb(231, 235, 227);
+    padding: 5px;
+    background-color:rgb(231, 235, 227);
+    border-radius: 5px;
+}
+
+/*夢を語れ千葉*/
+div.yumekata{
+    width: 100%;
+    text-align: center;
+    color:black;
+    font-size: 25px;
+}
+div.yumekata img {
+    width: 300px;
+    height: 200px;
+}
+
+a.yumekata{
+    color: black;
+    border: 2px solid rgb(231, 235, 227);
+    padding: 5px;
+    background-color:rgb(231, 235, 227);
+    border-radius: 5px;
+}
+
+/*なりたけ*/
+div.naritake{
+    width: 100%;
+    text-align: center;
+    color:black;
+    font-size: 25px;
+}
+div.naritake img {
+    width: 300px;
+    height: 200px;
+}
+
+a.naritake{
+    color: black;
+    border: 2px solid rgb(231, 235, 227);
+    padding: 5px;
+    background-color:rgb(231, 235, 227);
+    border-radius: 5px;
+}
+/*ここまで2枚目（ラーメン）*/
+
+/*2枚目（遊び場）デザイン*/
+div.sh4{
+    display: flex;
+    text-align: center;
+    width: 100%;/*幅*/
+    height: 270px;/*高さ*/
+    background: rgb(158, 211, 216);/*背景色*/
+    font-size: 30px;
+}
+@media only screen and (max-width: 1000px) {
+    div.sh4{
+        display: flex;
+        text-align: center;
+        width: 100%;/*幅*/
+        height: 270px;/*高さ*/
+        background: rgb(158, 211, 216);/*背景色*/
+        font-size: 23px;
+    }
+}
+
+/*レインボー*/
+div.rainbow{
+    width: 100%;
+    text-align: center;
+    color:black;
+}
+div.rainbow img {
+    width: 300px;
+    height: 200px;
+}
+
+a.rainbow{
+    color: black;
+    border: 2px solid rgb(231, 235, 227);
+    padding: 5px;
+    background-color:rgb(231, 235, 227);
+    border-radius: 5px;
+}
+
+/*駄菓子屋*/
+div.dagasiya{
+    width: 100%;
+    text-align: center;
+    color:black;
+}
+div.dagasiya img {
+    width: 300px;
+    height: 200px;
+}
+
+a.dagasiya{
+    color: black;
+    border: 2px solid rgb(231, 235, 227);
+    padding: 5px;
+    background-color:rgb(231, 235, 227);
+    border-radius: 5px;
+}
+
+/*ガチャガチャ*/
+div.gachagacha{
+    width: 100%;
+    text-align: center;
+    color:black;
+}
+div.gachagacha img {
+    width: 300px;
+    height: 200px;
+}
+
+a.gachagacha{
+    color: black;
+    border: 2px solid rgb(231, 235, 227);
+    padding: 5px;
+    background-color:rgb(231, 235, 227);
+    border-radius: 5px;
+}
+/*ここまで2枚目（遊び場）*/
+
+/*3枚目（村さ来）デザイン*/
+div.al2{
+    display:flex;
+    width: 100%;
+    height: auto;/*高さ*/
+    background: rgb(231, 235, 227);
+}
+
+/*店名紹介（左）*/
+div.tenmei{
+    background: rgb(231, 235, 227);
+    width: 25%;
+    padding: 10px;
+}
+
+a.mise{
+    padding: 5px;
+}
+
+a.menu{
+    padding: 5px;
+}
+
+/*詳細（右）*/
+div.shousai{
+    display: flow-root;
+    background: rgb(70, 80, 100);
+    padding: 5px;
+    color: white;
+    width: 75%;
+}
+
+/*3枚目（右上）*/
+div.pt {
+    display: flow-root;
+    padding: 5px;
+    height: auto
+}
+
+/*おすすめポイント*/
+div.point{
+    width: 100%;
+    font-size: 35px;
+}
+
+/*時間，定休日，場所*/
+div.jikan{
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse; /* テーブルの枠線を重ねる */
+    width: 100%; /* テーブルの幅を調整 */
+    color: black;
+}
+
+td {
+    border: 3px solid white; /* セルの枠線の太さと色を指定 */
+    padding: 8px; /* セル内の余白を調整 */
+    font-size: 20px; /* テキストの大きさを指定 */
+    background-color: rgb(231, 235, 227);
+}
+td.left{
+    width: 150px;
+}
+
+a.ao{
+    color: blue;
+    text-decoration: underline;
+}
+/*感想（右下）*/
+div.kansou{
+    display: flex;
+    padding: 5px;
+    font-size: 10px;
+    height: auto;
+}
+
+/*感想（１～３）*/
+div.kansou1{
+    display: flow-root;
+    padding: 15px;
+    width: 33%;
+}
+
+div.kansou2{
+    display: flow-root;
+    padding: 15px;
+    width: 33%;
+}
+
+div.kansou3{
+    display: flow-root;
+    padding: 15px;
+    width: 33%;
+}
+/*ここまで3枚目（居酒屋）*/
+
+/*3枚目（ラーメン屋）デザイン*/
+div.al3{
+    display:flex;
+    width: 100%;
+    height: auto;/*高さ*/
+    background: rgb(231, 235, 227);
+}
+
+a.mise{
+    padding: 5px;
+}
+
+a.menu{
+    padding: 5px;
+}
+
+/*詳細（右）*/
+div.shousai2{
+    height: auto;
+    display: flow-root;
+    background: rgb(229, 227, 88);
+    padding: 5px;
+    color: black;
+    width: 75%;
+}
+
+/*3枚目（右上）*/
+
+/*必勝軒*/
+div.pt2{
+    display: flow-root;
+    padding: 5px;
+    height: auto;
+}
+
+/*おすすめポイント*/
+div.point2{
+    width: 100%;
+    font-size: 35px;
+}
+
+/*時間，定休日，場所*/
+div.jikan2{
+    width: 100%;
+}
+table{
+    border-collapse: collapse; /* テーブルの枠線を重ねる */
+    width: 100%; /* テーブルの幅を調整 */
+    color: black;
+}
+
+td{
+    border: 3px solid black; /* セルの枠線の太さと色を指定 */
+    padding: 8px; /* セル内の余白を調整 */
+    font-size: 20px; /* テキストの大きさを指定 */
+    background-color: rgb(231, 235, 227);
+}
+/*感想（右下）*/
+div.kansou{
+    display: flex;
+    padding: 5px;
+    font-size: 10px;
+    height: auto;
+}
+
+/*感想（１～３）*/
+div.kansou1{
+    display: flow-root;
+    padding: 15px;
+    width: 33%;
+}
+
+div.kansou2{
+    display: flow-root;
+    padding: 15px;
+    width: 33%;
+}
+
+div.kansou3{
+    display: flow-root;
+    padding: 15px;
+    width: 33%;
+}
+/*ここまで3枚目（ラーメン屋）*/
+
+/*3枚目（遊び場）デザイン*/
+div.al3{
+    display:flex;
+    width: 100%;
+    height: auto;
+    background: rgb(231, 235, 227);
+}
+h1.nedan{
+    font-size: 15px;
+}
+a.nedan{
+    color: blue;
+    text-decoration: underline;
+}
+a.mise{
+    padding: 5px;
+}
+
+a.menu{
+    padding: 5px;
+}
+
+/*詳細（右）*/
+div.shousai3{
+    height: auto;
+    display: flow-root;
+    background: rgb(158, 211, 216);
+    padding: 5px;
+    color: black;
+    width: 75%;
+}
+
+/*3枚目（右上）*/
+div.pt3{
+    display: flow-root;
+    padding: 5px;
+    height: auto;
+    font-size: 40px;
+}
+
+/*おすすめポイント*/
+div.point3{
+    width: 100%;
+    font-size: 35px;
+}
+
+/*時間，定休日，場所*/
+div.jikan3{
+    width: 100%;
+}
+table{
+    border-collapse: collapse; /* テーブルの枠線を重ねる */
+    width: 100%; /* テーブルの幅を調整 */
+    color: black;
+}
+
+td{
+    border: 3px solid black; /* セルの枠線の太さと色を指定 */
+    padding: 8px; /* セル内の余白を調整 */
+    font-size: 20px; /* テキストの大きさを指定 */
+    background-color: rgb(231, 235, 227);
+}
+/*感想（右下）*/
+div.kansou{
+    display: flex;
+    padding: 5px;
+    font-size: 10px;
+    height: auto;
+}
+
+/*感想（１～３）*/
+div.kansou1{
+    display: flow-root;
+    padding: 15px;
+    width: 33%;
+}
+
+div.kansou2{
+    display: flow-root;
+    padding: 15px;
+    width: 33%;
+}
+
+div.kansou3{
+    display: flow-root;
+    padding: 15px;
+    width: 33%;
+}
+/*ここまで3枚目（遊び場）*/
