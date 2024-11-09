@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>大学生におすすめのお店:in津田沼（実験用）</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+	</head>
+	<body>
+		<div class="nav">
+			<ul class="menu">
+				<li><a>ホーム</a></li>
+				<li><a href="10nomitai.html">飲みたい！</a></li>
+				<li><a href="20tabetai.html">食べたい！</a></li>
+				<li><a href="30asobitai.html">遊びたい！</a></li>
+			</ul>
+		</div>
+		<div class="top">
+		<h1 class="top">
+			<br>大学生におすすめの　　　　<br>　　　　お店:in津田沼（実験用）
+		</h1>
+		</div>
+		<div class="al">
+		
+			<div class="c">
+				<h1>
+					あなたは今どんな気分？
+				</h1>
+			</div>
+			
+			<div class="sh">
+				<div class="nomitai">
+					<a href="10nomitai.html"><img src="飲みたい！.png" alt="test" width="300" height="200"></a>
+					<br><a href="10nomitai.html" class="nomi">飲みたい！</a>
+				</div>
+				<div class="tabetai">
+					<a href="20tabetai.html"><img src="食べたい！.png" alt="test" width="300" height="200"></a>
+					<br><a href="20tabetai.html" class="taberu">食べたい！</a>
+				</div>
+				<div class="asobitai">
+					<a href="30asobitai.html"><img src="遊びたい！.png" alt="test" width="300" height="200"></a>
+					<br><a href="30asobitai.html" class="asobi">遊びたい！</a>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
